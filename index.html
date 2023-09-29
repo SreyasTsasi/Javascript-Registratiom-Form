@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form onsubmit="submitHandler(event)" id="form">
+      <h2>Register now</h2>
+      <div class="username if">
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div class="fname if">
+        <label for="fname">First name: </label>
+        <input type="text" name="fname" id="fname" />
+      </div>
+      <div class="lname if">
+        <label for="lname">Last name: </label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <div class="email if">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div class="phone if">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+      <div class="pass if">
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" id="pass" />
+      </div>
+      <div class="cpass if">
+        <label for="cpass">Confirm password: </label>
+        <input type="password" name="cpass" id="cpass" />
+      </div>
+      <div class="error if">
+        <p id="error">
+        </p>
+      </div>
+      <div class="submit">
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
